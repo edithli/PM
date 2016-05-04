@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:id="@+id/main_username_tv"
+            android:layout_alignParentTop="true"
+    />
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_username"
+            android:id="@+id/input_username"
+            android:layout_below="@id/main_username_tv"
+    />
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:id="@+id/main_mpw_tv"
+            android:layout_below="@id/input_username"
+    />
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_mpw"
+            android:password="true"
+            android:hint="@string/input_mpw"
+            android:layout_below="@id/main_mpw_tv"
+    />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:onClick="register"
+            android:id="@+id/main_register_button"
+            android:layout_below="@id/input_mpw"
+            android:layout_alignParentLeft="true"
+    />
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:onClick="login"
+            android:id="@+id/main_login_button"
+            android:layout_below="@id/input_mpw"
+            android:layout_alignParentRight="true"
+    />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_pwd"
+            android:onClick="hintPassword"
+            android:layout_below="@id/input_mpw"
+            android:layout_centerHorizontal="true"
+    />
+</RelativeLayout>
+

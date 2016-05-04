@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@android:color/white"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+            android:text="@string/domain_tv"
+            android:id="@+id/add_domain_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <EditText
+            android:layout_below="@id/add_domain_tv"
+            android:hint="@string/hint_domain_input"
+            android:id="@+id/add_domain_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_below="@id/add_domain_input"
+            android:text="@string/username"
+            android:id="@+id/add_username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <EditText
+            android:layout_below="@id/add_username_tv"
+            android:hint="@string/input_username"
+            android:id="@+id/add_username_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_below="@id/add_username_input"
+            android:text="@string/webpwd_tv"
+            android:id="@+id/add_webpwd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <EditText
+            android:layout_below="@id/add_webpwd_tv"
+            android:hint="@string/hint_webpwd_input"
+            android:id="@+id/add_webpwd_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

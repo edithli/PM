@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/username"
+              android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"
+              android:id="@+id/username_tv"
+    />
+    <EditText android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/register_username"
+              android:hint="@string/input_username"
+              android:layout_below="@id/username_tv"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/password"
+              android:id="@+id/mpw_tv"
+              android:layout_below="@id/register_username"
+    />
+    <EditText android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/register_pwd"
+              android:hint="@string/input_mpw"
+              android:password="true"
+              android:layout_below="@id/mpw_tv"
+    />
+    <EditText android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/register_ensure_pwd"
+              android:hint="@string/hint_ensure_pwd"
+              android:password="true"
+              android:layout_below="@id/register_pwd"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/pwd_hints"
+              android:layout_below="@id/register_ensure_pwd"
+              android:id="@+id/pwd_hints_tv"
+    />
+    <EditText android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/register_pwd_hints"
+              android:hint="@string/hint_pwd_hints"
+              android:layout_below="@id/pwd_hints_tv"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/checksum"
+              android:id="@+id/checksum_tv"
+              android:layout_below="@id/register_pwd_hints"
+    />
+    <EditText android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/register_checksum"
+              android:hint="@string/hint_checksum"
+              android:layout_below="@id/checksum_tv"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_notes"
+            android:id="@+id/notes_tv"
+            android:layout_below="@id/register_checksum"
+    />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_finish_button"
+            android:text="@string/finished"
+            android:onClick="finishRegister"
+            android:layout_below="@id/notes_tv"
+            android:layout_alignParentRight="true"
+    />
+
+</RelativeLayout>

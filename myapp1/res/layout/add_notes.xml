@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:background="@android:color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+            android:text="@string/note_name"
+            android:id="@+id/add_note_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <EditText
+            android:hint="@string/hint_note_name_input"
+            android:layout_below="@id/add_note_name_tv"
+            android:id="@+id/add_note_name_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/add_note_content_tv"
+            android:text="@string/note_content"
+            android:layout_below="@id/add_note_name_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <EditText
+            android:id="@+id/add_note_content_input"
+            android:inputType="textMultiLine"
+            android:layout_below="@id/add_note_content_tv"
+            android:maxLines="20"
+            android:lines="10"
+            android:gravity="top"
+            android:scrollbars="vertical"
+            android:background="@drawable/edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

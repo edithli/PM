@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+              android:id="@+id/homepage"
+              android:background="@drawable/homepage_color"
+>
+    <RelativeLayout
+            android:background="@drawable/homepage_color"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:textColor="@color/homepage_title_text"
+                android:layout_centerVertical="true"
+                android:textSize="25sp"
+                android:id="@+id/app_name_tv"
+                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:gravity="center"
+                android:textSize="40sp"
+                android:textColor="@color/homepage_title_text"
+                android:textStyle="bold"
+                android:text="@string/plus"
+                android:onClick="showAddMenu"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:id="@+id/add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:background="@android:color/white"
+            android:paddingBottom="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:textColor="@color/homepage_frame_text"
+                android:textStyle="bold"
+                android:paddingLeft="20sp"
+                android:text="test"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/show_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:textColor="@color/homepage_frame_text"
+                android:textStyle="bold"
+                android:paddingRight="20sp"
+                android:text="test"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/show_checksum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <FrameLayout  android:id="@+id/homepageFrame"
+                  android:background="@android:color/white"
+                  android:layout_width="fill_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"/>
+
+    <RadioGroup
+            android:id="@+id/rg_navigator"
+            android:orientation="horizontal"
+            android:gravity="center|bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+        <RadioButton
+                android:textSize="20sp"
+                android:textColor="@color/rb_selector_text_color"
+                android:background="@drawable/rb_selector_bg_color"
+                android:gravity="center"
+                android:button="@null"
+                android:text="@string/rb_website"
+                android:layout_weight="1"
+                android:id="@+id/rb_website"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"/>
+        <RadioButton
+                android:textSize="20sp"
+                android:textColor="@color/rb_selector_text_color"
+                android:background="@drawable/rb_selector_bg_color"
+                android:gravity="center"
+                android:button="@null"
+                android:text="@string/rb_cards"
+                android:layout_weight="1"
+                android:id="@+id/rb_card"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"/>
+        <RadioButton
+                android:textSize="20sp"
+                android:textColor="@color/rb_selector_text_color"
+                android:background="@drawable/rb_selector_bg_color"
+                android:gravity="center"
+                android:button="@null"
+                android:text="@string/rb_notes"
+                android:layout_weight="1"
+                android:id="@+id/rb_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"/>
+
+    </RadioGroup>
+</LinearLayout>

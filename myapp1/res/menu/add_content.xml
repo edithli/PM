@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add_website"
+          android:title="@string/add_website_menu" />
+    <item android:id="@+id/add_card"
+          android:title="@string/add_card_menu" />
+    <item android:id="@+id/add_note"
+          android:title="@string/add_note_menu" />
+    <item android:id="@+id/remove_user"
+          android:title="@string/remove_everything" />
+
+</menu>

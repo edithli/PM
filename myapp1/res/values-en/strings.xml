@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">myapp</string>
+    <string name="input_username">please enter your username</string>
+    <string name="username">username：</string>
+    <string name="password">master password:</string>
+    <string name="input_mpw">please enter your master password</string>
+    <string name="register">REGISTER</string>
+    <string name="login">LOGIN</string>
+    <string name="hints">校验词</string>
+</resources>
